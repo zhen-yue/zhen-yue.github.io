@@ -1272,7 +1272,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7e5e82;
+  background: #b06373;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2598,7 +2598,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 48% 50%;
-  width: 100%;
 }
 .footer {
   background-color: rgba(0,0,0,0.1);
@@ -2625,14 +2624,55 @@ body {
   margin-bottom: 5px;
   background-color: rgba(0,0,0,0.3);
 }
+.sidebar-inner {
+  padding-top: 100px;
+}
 .popup {
   opacity: 0.8;
 }
 .content,
-.post {
+.post,
+.comments {
   margin-top: 60px;
   padding: 20px 20px 50px;
   margin-bottom: 60px;
   -webkit-box-shadow: 0 0 5px #788072;
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+.comments {
+  background-color: rgba(54,67,77,0.1);
+}
+.vpower {
+  opacity: 0;
+  height: 0;
+}
+.status-bar,
+.markdown {
+  height: 0;
+  width: 0;
+}
+.posts-expand .post-tags a {
+  background-color: rgba(0,0,0,0);
+}
+.posts-expand .post-tags a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+.reward-container button {
+  background-color: rgba(85,85,85,0.4);
+}
+.reward-container button:hover {
+  background-color: #555;
+}
+.aplayer.aplayer-fixed,
+.aplayer.aplayer-fixed .aplayer-body {
+  bottom: 100px !important;
+}
+.aplayer .aplayer-list ol li {
+  display: flex;
+  justify-content: space-between;
+}
+.saying {
+  margin-top: 10px;
+  display: block;
 }

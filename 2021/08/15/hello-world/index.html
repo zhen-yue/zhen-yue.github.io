@@ -78,6 +78,8 @@
   </style>
 </noscript>
 
+  <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script> 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -100,6 +102,7 @@
       <span class="logo-line-before"><i></i></span>
       <h1 class="site-title">ZhenYue's Blog</h1>
       <span class="logo-line-after"><i></i></span>
+      <span class="saying"><i>所念皆星河,所系皆山海。</i></span>
     </a>
   </div>
 
@@ -108,6 +111,7 @@
         <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
+
 </div>
 
 
@@ -202,7 +206,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="zhen-yue">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Welcome to my world">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -283,6 +287,26 @@
     
     
     
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="zhen-yue 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="zhen-yue 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
 
       <footer class="post-footer">
 
@@ -364,7 +388,7 @@
     <img class="site-author-image" itemprop="image" alt="zhen-yue"
       src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">zhen-yue</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Welcome to my world</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -410,6 +434,59 @@
 
       </div>
 
+      <!--网易云插件
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+      src="外链">
+      </iframe>
+      -->
+
+      <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <!-- require MetingJS-->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> 
+    <!--网易云  
+    <meting-js
+      server="netease"
+      id="2065854146"
+	  type="playlist" 
+	  mini="false"
+      fixed="false"
+      list-folded="true"
+      autoplay="false"
+      volume="0.4"
+      theme="#FADFA3"
+      order="random"
+	  loop="all"
+      preload="auto"
+      mutex="true">
+    </meting-js>
+    --> 
+    <!--   
+      选项	默认值	功能描述
+      id	必须值	歌曲 id / 播放列表 id / 相册 id / 搜索关键字
+      server	必须值	音乐平台: netease, tencent, kugou, xiami, baidu
+      type	必须值	song, playlist, album, search, `artist
+      auto	options	music link, support: netease, tencent, xiami
+      fixed	false	开启固定模式
+      mini	false	开启迷你模式
+      autoplay	false	自动播放，移动端浏览器暂时不支持此功能
+      theme	#2980b9	播放器风格色彩设置
+      loop	all	列表循环模式：all, one,none
+      order	list	列表播放模式： list, random
+      preload	auto	音乐文件预载入模式，可选项： none, metadata, auto
+      volume	0.7	播放器音量
+      mutex	true	该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停
+      lrc-type	0	lyric type
+      list-folded	false	歌词格式类型
+      list-max-height	340px	播放列表的最大长度
+      storage-name	metingjs	LocalStorage 中存储播放器设定的键名
+    -->
+    <!-- QQ音乐 -->
+    <meting-js fixed="true" volume="0.1"
+    auto="https://y.qq.com/n/ryqq/playlist/7787659533.html#stat=y_new.playlist.pic_click">
+    </meting-js>
+
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
@@ -444,7 +521,7 @@
 
         
 <div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -479,6 +556,7 @@
   
   <script color='0,0,0' opacity='0.3' zIndex='-1' count='30' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -491,6 +569,65 @@
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -515,6 +652,7 @@
 
 
 
+    <div id="pjax">
   
 
   
@@ -548,6 +686,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
+    </div>
 </body>
 </html>
 <!--
