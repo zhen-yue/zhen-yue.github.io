@@ -1272,7 +1272,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2af4ff;
+  background: #2e3e2e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2676,9 +2676,9 @@ body {
   margin-top: 10px;
   display: block;
 }
-tbody tr:nth-of-type(odd) {
+table tr:nth-of-type(odd) {
   background-color: rgba(249,249,249,0.3);
 }
-tbody tr:nth-of-type(even):hover {
-  background-color: rgba(249,249,249,0);
+table tr:nth-of-type(even):hover {
+  background-color: rgba(249,249,249,0.3);
 }
