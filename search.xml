@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>学习笔记</title>
+    <url>/2021/08/19/test/</url>
+    <content><![CDATA[<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><blockquote>
+<ol>
+<li><p>编写网页的语言是html，规则由w3c制定</p>
+</li>
+<li><p>超链接不能嵌套超链接，P标签不能嵌套P标签，标题标签不能嵌套标题标签</p>
+</li>
+<li><p>文字类标签内不能含块级元素</p>
+</li>
+<li><p>form必须有action属性，表示提交地址</p>
+</li>
+<li><p>所有需要提交的数据，input必须有name属性</p>
+</li>
+<li><p>input按钮的文字，使用value属性表示</p>
+</li>
+<li><p>input必须放在form内才能提交</p>
+</li>
+<li><p>get请求不能提交大量数据，post可以</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><blockquote>
+<ol>
+<li><p>已设置行高可以忽略高度设置</p>
+</li>
+<li><p>行内元素不指定上下内外边距和宽高</p>
+</li>
+<li><p>块级元素和行内元素的浮动、绝对定位和固定定位具有行内块特性</p>
+</li>
+<li><p>相对定位不脱离标准流，绝对定位完全脱离标准流</p>
+</li>
+<li><p>浮动元素的排列只参考前一个元素，不覆盖文字、图片、表单</p>
+</li>
+<li><p>重合的外边距取最大值合并</p>
+</li>
+<li><p>盒子模型稳定性:width&gt;padding&gt;margin</p>
+</li>
+<li><p>box-sizing属性border-box可以稳定盒子大小</p>
+</li>
+<li><p>z-index只有在绝对定位和相对定位中存在，初始值为0</p>
+</li>
+<li><p>transition写在伪类选择器中会缺失还原过渡</p>
+</li>
+<li><p>transform的translate百分比以自己的宽度为准</p>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><p>使用overflow或使用.clearfix:before,.clearfix:after{content:””;display:table}.clearfix:after{clear:both}可以去除父元素浮动元素影响(.clearfix{*zoom=1}用于IE6、7)</p>
+</li>
+<li><p>设置border、padding、overflow:hidden解决内盒外边距塌陷问题</p>
+</li>
+<li><p>block、list-item、table具有BFC(块级格式化上下文)条件，可以通过overflow:hidden创建BFC区域，可以解决外边距合并和消除元素内部浮动、创建自适应盒子</p>
+</li>
+<li><p>采用display:block或vertical-align:middle|top去除图片父元素底侧溢出</p>
+</li>
+<li><p>利用表格属性给父盒子设置display:table-cell;vertical-align:middle;可以快速让内盒垂直居中</p>
+</li>
+<li><p>给子盒子设置margin:0 auto;可以快速让盒子子元素水平居中，给内盒设置行内块属性，父盒子设置text-align:center;同样可以实现</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><blockquote>
+<ol>
+<li><p>ps切图:下载合成图—–&gt;photoshop切片道具—–&gt;ctrl+alt+shift+s—–&gt;png24+透明度—–&gt;存储</p>
+</li>
+<li><p>gif只有全透明和不透明两种模式</p>
+</li>
+<li><p>svg按颜色放大不会失真，不适用于复杂颜色图片</p>
+</li>
+</ol>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo使用指南</title>
     <url>/2021/08/15/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -24,18 +108,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>空</title>
-    <url>/2021/08/19/test/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
       </tags>
   </entry>
 </search>
