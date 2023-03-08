@@ -1,75 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>前端学习笔记(一)</title>
-    <url>/2021/08/19/html-css/</url>
-    <content><![CDATA[<p>html5、css3部分重难点整理</p>
+    <title>hexo博客创建</title>
+    <url>/2021/08/19/blog/</url>
+    <content><![CDATA[<h4 id="一、搭建博客"><a href="#一、搭建博客" class="headerlink" title="一、搭建博客"></a>一、搭建博客</h4><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n/">相关借鉴视频</a>：<a href="https://www.bilibili.com/video/BV1mU4y1j72n/">https://www.bilibili.com/video/BV1mU4y1j72n/</a></p>
 <span id="more"></span>
 
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><ol>
-<li><p>编写网页的语言是html，规则由w3c制定</p>
-</li>
-<li><p>超链接不能嵌套超链接，P标签不能嵌套P标签，标题标签不能嵌套标题标签</p>
-</li>
-<li><p>文字类标签内不能含块级元素</p>
-</li>
-<li><p>form必须有action属性，表示提交地址</p>
-</li>
-<li><p>所有需要提交的数据，input必须有name属性</p>
-</li>
-<li><p>input按钮的文字，使用value属性表示</p>
-</li>
-<li><p>input必须放在form内才能提交</p>
-</li>
-<li><p>get请求不能提交大量数据，post可以</p>
-</li>
-</ol>
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><ol>
-<li><p>已设置行高可以忽略高度设置</p>
-</li>
-<li><p>行内元素不指定上下内外边距和宽高</p>
-</li>
-<li><p>块级元素和行内元素的浮动、绝对定位和固定定位具有行内块特性</p>
-</li>
-<li><p>相对定位不脱离标准流，绝对定位完全脱离标准流</p>
-</li>
-<li><p>浮动元素的排列只参考前一个元素，不覆盖文字、图片、表单</p>
-</li>
-<li><p>重合的外边距取最大值合并</p>
-</li>
-<li><p>盒子模型稳定性:width&gt;padding&gt;margin</p>
-</li>
-<li><p>box-sizing属性border-box可以稳定盒子大小</p>
-</li>
-<li><p>z-index只有在绝对定位和相对定位中存在，初始值为0</p>
-</li>
-<li><p>transition写在伪类选择器中会缺失还原过渡</p>
-</li>
-<li><p>transform的translate百分比以自己的宽度为准</p>
-</li>
-</ol>
-<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><ol>
-<li><p>使用overflow或使用.clearfix:before,.clearfix:after{content:””;display:table}<br>.clearfix:after{clear:both}可以去除父元素浮动元素影响 (.clearfix{*zoom=1}用于IE6、7)</p>
-</li>
-<li><p>设置border、padding、overflow:hidden解决内盒外边距塌陷问题</p>
-</li>
-<li><p>block、list-item、table具有BFC(块级格式化上下文)条件，可以通过overflow:hidden创建BFC区域，可以解决外边距合并和消除元素内部浮动、创建自适应盒子</p>
-</li>
-<li><p>采用display:block或vertical-align:middle|top去除图片父元素底侧溢出</p>
-</li>
-<li><p>利用表格属性给父盒子设置display:table-cell;vertical-align:middle;可以快速让内盒垂直居中</p>
-</li>
-<li><p>给子盒子设置margin:0 auto;可以快速让盒子子元素水平居中，给内盒设置行内块属性，父盒子设置text-align:center;同样可以实现</p>
-</li>
-</ol>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><ol>
-<li><p>ps切图:下载合成图—–&gt;photoshop切片道具—–&gt;ctrl+alt+shift+s—–&gt;png24+透明度—–&gt;存储</p>
-</li>
-<li><p>gif只有全透明和不透明两种模式</p>
-</li>
-<li><p>svg按颜色放大不会失真，不适用于复杂颜色图片</p>
-</li>
-</ol>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)</span><br><span class="line">$ git --version</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)</span><br><span class="line">$ node -v</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)</span><br><span class="line">$ npm -v</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)     </span><br><span class="line">$ npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)   </span><br><span class="line">#全部回车略过，C:\Users\Administrator\.ssh、id_rsa.pub找到ssh Keys复制到github</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;邮箱&quot;</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master) </span><br><span class="line">#测试ssh绑定是否成功</span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)</span><br><span class="line">$ npm install -g hexo</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 /c/hexo</span><br><span class="line">#初始化</span><br><span class="line">$ hexo init</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 /c/hexo</span><br><span class="line">#本地部署server</span><br><span class="line">$ hexo s</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 /c/hexo</span><br><span class="line">#安装自动部署发布工具</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 /c/hexo</span><br><span class="line">#清空public</span><br><span class="line">$ hexo clean</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 /c/hexo</span><br><span class="line">#生成generate页面</span><br><span class="line">$ hexo g</span><br><span class="line"></span><br><span class="line">Administrator@DESKTOP  MINGW64 /c/hexo</span><br><span class="line">#上传到github部署，需要用户名和Personal access tokens</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="二、问题解决"><a href="#二、问题解决" class="headerlink" title="二、问题解决"></a>二、问题解决</h4><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)</span><br><span class="line">#补全环境</span><br><span class="line">$ npm install</span><br><span class="line"></span><br><span class="line">#错误：Something&#x27;s wrong. Maybe you can <span class="built_in">find</span> the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br><span class="line">#常因网络速度过慢出现的问题，重试即可</span><br><span class="line"></span><br><span class="line">#错误：(node:<span class="number">4396</span>) ExperimentalWarning: The <span class="built_in">fs</span>.promises API is experimental</span><br><span class="line">Administrator@DESKTOP-<span class="number">7</span>S2QKKS MINGW64 ~/Desktop/blog (master)</span><br><span class="line">#通过nvm下载最新版node</span><br><span class="line">$ nvm install latest</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>BLOG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端学习笔记</title>
+    <url>/2021/08/19/front-end/</url>
+    <content><![CDATA[<h4 id="一、HTML5和CSS3相关问题以及图像处理学习笔记"><a href="#一、HTML5和CSS3相关问题以及图像处理学习笔记" class="headerlink" title="一、HTML5和CSS3相关问题以及图像处理学习笔记"></a>一、<a href="https://www.mubucm.com/doc/1qQ3TZsgbeV">HTML5和CSS3相关问题以及图像处理学习笔记</a></h4><p>文档链接: <a href="https://www.mubucm.com/doc/1qQ3TZsgbeV">https://www.mubucm.com/doc/1qQ3TZsgbeV</a> </p>
+<span id="more"></span>
+
+<p>密码: mo5l</p>
+<h4 id="二、JavaScript学习笔记"><a href="#二、JavaScript学习笔记" class="headerlink" title="二、JavaScript学习笔记"></a>二、<a href="https://www.mubucm.com/doc/5YGfwMqgLeV">JavaScript学习笔记</a></h4><p>文档链接: <a href="https://www.mubucm.com/doc/5YGfwMqgLeV">https://www.mubucm.com/doc/5YGfwMqgLeV</a> </p>
+<p>密码: fkas</p>
 ]]></content>
       <categories>
         <category>前端</category>
@@ -77,6 +36,7 @@
       <tags>
         <tag>HTML</tag>
         <tag>CSS</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
 </search>

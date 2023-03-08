@@ -1272,7 +1272,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #53ff12;
+  background: #b57d0d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2594,7 +2594,8 @@ hr {
   margin-top: 30px;
 }
 body {
-  background: url("/images/background.jpg");
+/* 页面背景url(/images/background.jpg) */
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 48% 50%;
