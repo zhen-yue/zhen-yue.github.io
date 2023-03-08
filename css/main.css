@@ -1272,7 +1272,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff45ff;
+  background: #ffac95;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2601,7 +2601,7 @@ body {
   background-position: 48% 50%;
 }
 .footer {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0);
 }
 .footer-inner {
   display: flex;
