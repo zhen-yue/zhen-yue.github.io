@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客创建</title>
+    <title>Hexo创建github博客</title>
     <url>/2021/08/19/blog/</url>
     <content><![CDATA[<h4 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h4><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n/">相关借鉴视频</a>：<a href="https://www.bilibili.com/video/BV1mU4y1j72n/">https://www.bilibili.com/video/BV1mU4y1j72n/</a></p>
 <span id="more"></span>
@@ -17,7 +17,8 @@
         <category>博客</category>
       </categories>
       <tags>
-        <tag>BLOG</tag>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
