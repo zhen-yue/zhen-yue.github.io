@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#nav{
+	width: 100%;
+	overflow: hidden;
+	background-color: #2577e3;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	min-width: 980px !important;
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.nav-ul li{
+	list-style: none;
+	padding: 0 11px;
+	width: auto;
+	height: 40px;
+	float: left;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+	font-family: "microsoft yahei";
+	cursor: pointer;
+}
+
+/* 伪类 */
+.nav-ul li:hover{
+	list-style: none;
+	padding: 0 11px;
+	width: auto;
+	float: left;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+	font-family: "microsoft yahei";
+	cursor: pointer;
+	background-color: #0a56bb;
+}
+
+#divider{
+	width: 1px;
+	padding: 0;
+	height: 13px;
+	margin: 13px 0 ;
+	background-color: #0a56bb;
+}
+
+.cui_ico_triangle {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    border-top: 3px solid #fff;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+/*    transform: rotate(360deg); */
+}
