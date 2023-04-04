@@ -14,7 +14,7 @@
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 全部回车略过，C:\Users\Administrator\.ssh、id_rsa.pub找到ssh Keys复制到github</span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)   </span><br><span class="line">$ ssh-keygen -t rsa -C &quot;邮箱&quot;</span><br><span class="line"></span><br><span class="line">## 测试ssh绑定是否成功</span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master) </span><br><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 配置密码验证，可全部回车略过</span><br><span class="line">## 完成后在C:\Users\Administrator\.ssh、id_rsa.pub找到ssh Keys复制到github</span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master)   </span><br><span class="line">$ ssh-keygen -t rsa -C &quot;邮箱&quot;</span><br><span class="line"></span><br><span class="line">## 测试ssh绑定是否成功</span><br><span class="line">Administrator@DESKTOP  MINGW64 ~/Desktop/blog (master) </span><br><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
 
 
